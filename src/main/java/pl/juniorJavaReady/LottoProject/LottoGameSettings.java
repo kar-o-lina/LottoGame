@@ -1,18 +1,15 @@
 package pl.juniorJavaReady.LottoProject;
 
-import java.util.HashMap;
-import java.util.Map;
-
 //Answer to above: google says properties are String to String values
-//soo I made simple hashmap
+//firstly wanted to make a hashmap, but it was a pain too big for just tree values
+
 public class LottoGameSettings {
 
+    public static int NUMBERS_FOR_LOTTO_GAME = 6;
+    public static int LOWER_BOUND = 1;
+    public static int UPPER_BOUND = 99;
 
-    //todo change other classes so they can use hashmap instead of previous static
-    public LottoGameSettings() {
-        Map<String, Integer> configurationSetupValues = new HashMap<>();
-        configurationSetupValues.put("NUMBERS_TO_GENERATE_AND_GUESS", 6);
-        configurationSetupValues.put("LOWER_BOUND", 1);
-        configurationSetupValues.put("UPPER_BOUND", 99);
-    }
+    private LottoGameSettings(){}
+
 }
+

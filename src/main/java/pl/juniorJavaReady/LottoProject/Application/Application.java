@@ -1,4 +1,4 @@
-package pl.juniorJavaReady.LottoProject;
+package pl.juniorJavaReady.LottoProject.Application;
 
 public class Application {
 
