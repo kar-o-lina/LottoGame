@@ -1,6 +1,6 @@
 package pl.juniorJavaReady.LottoProject.Application;
 
-import pl.juniorJavaReady.LottoProject.GameOutcomeVerifier;
+import pl.juniorJavaReady.LottoProject.CheckGameOutcome.LottoOutcomeVerifier;
 import pl.juniorJavaReady.LottoProject.GenerateRandomNumbers.LottoNumbersGenerator;
 import pl.juniorJavaReady.LottoProject.ReadUserInput.ConsoleInputReader;
 
@@ -12,13 +12,13 @@ public class LottoGame implements Game {
     //like Game interface?
     private final ConsoleInputReader userInputGetter;
     private final LottoNumbersGenerator randomNumbersGenerator;
-    private final GameOutcomeVerifier gameOutcomeVerifier;
+    private final LottoOutcomeVerifier gameOutcomeVerifier;
 
     // TODO: 30.07.2022 dependency injection, currently class is not testable
     public LottoGame() {
         this.userInputGetter = new ConsoleInputReader();
         this.randomNumbersGenerator = new LottoNumbersGenerator();
-        this.gameOutcomeVerifier = new GameOutcomeVerifier();
+        this.gameOutcomeVerifier = new LottoOutcomeVerifier();
     }
 
     @Override

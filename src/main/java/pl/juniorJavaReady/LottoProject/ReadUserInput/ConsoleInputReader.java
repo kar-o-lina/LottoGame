@@ -1,7 +1,7 @@
 package pl.juniorJavaReady.LottoProject.ReadUserInput;
 
-import pl.juniorJavaReady.LottoProject.LottoGameSettings;
-import pl.juniorJavaReady.LottoProject.MessageProvider;
+import pl.juniorJavaReady.LottoProject.Configuration.LottoGameSettings;
+import pl.juniorJavaReady.LottoProject.Configuration.LottoMessages;
 
 import java.util.HashSet;
 import java.util.Scanner;
@@ -19,7 +19,7 @@ public class ConsoleInputReader implements InputReader {
 
     @Override
     public Set<Integer> acquireUserInput() {
-        System.out.println(MessageProvider.PROMPT);
+        System.out.println(LottoMessages.GAME_STARTING_MESSAGE);
 
         while (userGuesses.size() < LottoGameSettings.NUMBERS_FOR_LOTTO_GAME) {
             int userInput = readUserInput();
@@ -56,7 +56,7 @@ public class ConsoleInputReader implements InputReader {
     }
 
     private void informUserInputIsNotNumber() {
-        System.out.println(MessageProvider.NOT_NUMBER);
+        System.out.println(LottoMessages.INPUT_IS_NOT_NUMBER);
     }
 
     private boolean isInBounds(int guess) {
@@ -64,6 +64,6 @@ public class ConsoleInputReader implements InputReader {
     }
 
     private void informUserInputOutOfBounds() {
-        System.out.println(MessageProvider.OUT_OF_BOUNDS);
+        System.out.println(LottoMessages.INPUT_IS_OUT_OF_BOUNDS);
     }
 }

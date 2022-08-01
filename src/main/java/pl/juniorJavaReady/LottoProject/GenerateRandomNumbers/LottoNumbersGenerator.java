@@ -1,6 +1,6 @@
 package pl.juniorJavaReady.LottoProject.GenerateRandomNumbers;
 
-import pl.juniorJavaReady.LottoProject.LottoGameSettings;
+import pl.juniorJavaReady.LottoProject.Configuration.LottoGameSettings;
 
 import java.util.HashSet;
 import java.util.Random;

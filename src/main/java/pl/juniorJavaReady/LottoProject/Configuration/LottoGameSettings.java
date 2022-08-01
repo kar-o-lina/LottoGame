@@ -1,4 +1,4 @@
-package pl.juniorJavaReady.LottoProject;
+package pl.juniorJavaReady.LottoProject.Configuration;
 
 //Answer to above: google says properties are String to String values
 //firstly wanted to make a hashmap, but it was a pain too big for just tree values
