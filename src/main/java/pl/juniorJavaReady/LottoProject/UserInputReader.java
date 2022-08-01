@@ -1,3 +1,5 @@
+package pl.juniorJavaReady.LottoProject;
+
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -22,7 +24,7 @@ public class UserInputReader {
         System.out.println(MessageProvider.PROMPT);
         int userInput = -1; // TODO: 30.07.2022 can be just inside of a loop without this strange initialization
 
-        while (userGuesses.size() < LottoGameSettings.NUMBERS_TO_GUESS) {
+        while (userGuesses.size() < LottoGameSettings.NUMBERS_TO_GENERATE_AND_GUESS) {
             if (isInputNumber()) {
                 userInput = scanner.nextInt();
             }

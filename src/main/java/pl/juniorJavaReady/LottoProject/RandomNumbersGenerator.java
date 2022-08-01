@@ -1,3 +1,5 @@
+package pl.juniorJavaReady.LottoProject;
+
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
@@ -14,7 +16,7 @@ public class RandomNumbersGenerator {
 
     // TODO: 30.07.2022 without checking the implementation idk how many numbers will be generated and in what range. its also not extendable: what if i wanted to generate 3 numbers? or 20? what if i wanted a different range of numbers?
     public Set<Integer> generateRandomNumbers() {
-        while (generatedNumbers.size() < LottoGameSettings.NUMBERS_TO_GENERATE) {
+        while (generatedNumbers.size() < LottoGameSettings.NUMBERS_TO_GENERATE_AND_GUESS) {
             generatedNumbers.add(getRandomNumber());
         }
         printGeneratedNumbers();
