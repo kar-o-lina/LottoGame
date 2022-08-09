@@ -4,6 +4,7 @@ import pl.juniorJavaReady.LottoProject.CheckGameOutcome.LottoOutcomeVerifier;
 import pl.juniorJavaReady.LottoProject.GenerateRandomNumbers.LottoNumbersGenerator;
 import pl.juniorJavaReady.LottoProject.ReadUserInput.ConsoleInputReader;
 
+import java.util.Random;
 import java.util.Set;
 
 public class LottoGame implements Game {
@@ -14,7 +15,17 @@ public class LottoGame implements Game {
     private final LottoNumbersGenerator randomNumbersGenerator;
     private final LottoOutcomeVerifier gameOutcomeVerifier;
 
-    // TODO: 30.07.2022 dependency injection, currently class is not testable
+    public LottoGame() {
+        this(new ConsoleInputReader());
+    }
+
+    public LottoGame(ConsoleInputReader reader) {
+        this(reader, new LottoNumbersGenerator(new Random()));
+    }
+
+    public LottoGame(ConsoleInputReader reader, LottoNumbersGenerator generator) {
+        this(reader, generator, new LottoOutcomeVerifier());
+    }
     public LottoGame(ConsoleInputReader reader, LottoNumbersGenerator generator, LottoOutcomeVerifier verifier) {
         this.userInputReader = reader;
         this.randomNumbersGenerator = generator;
