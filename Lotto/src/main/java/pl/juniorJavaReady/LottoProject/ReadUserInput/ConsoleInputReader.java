@@ -45,7 +45,8 @@ public class ConsoleInputReader implements InputReader {
     }
 
     private boolean isInBounds(String guess) {
-        return Integer.valueOf(guess) < 100 && Integer.valueOf(guess) > 0;
+        final int number = Integer.valueOf(guess);
+        return number < 100 && number > 0;
     }
 
    private void informUserInputOutOfBounds() {
