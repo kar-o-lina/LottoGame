@@ -8,10 +8,8 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.Set;
 
-public class LottoGame implements Game {
+public class LottoGame {
 
-    // TODO: 30.07.2022 should be an interface here (as in previous comment), also programming to interfaces
-    //like Game interface..?
     private final ConsoleInputReader userInputReader;
     private final LottoNumbersGenerator randomNumbersGenerator;
     private final LottoOutcomeVerifier gameOutcomeVerifier;
@@ -33,7 +31,6 @@ public class LottoGame implements Game {
         this.gameOutcomeVerifier = verifier;
     }
 
-    @Override
     public void play() {
         Scanner scanner = new Scanner(System.in);
         Set<Integer> userGuesses = userInputReader.acquireUserInput(scanner);
