@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.kaczmarczyk</groupId>
+    <groupId>org.karolinakaczmarczyk</groupId>
     <artifactId>Lotto</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -47,14 +47,14 @@
     </build>
 
     <properties>
-        <junit.jupiter.version>5.9.0</junit.jupiter.version>
+        <junit.version>5.9.0</junit.version>
         <junit.platform.version>1.9.0</junit.platform.version>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <assertj.version>3.23.1</assertj.version>
         <mockito.version>4.7.0</mockito.version>
+        <assertj.version>3.23.1</assertj.version>
         <hamcrest.version>2.2</hamcrest.version>
         <testing.version>7.6.1</testing.version>
+        <java.version>17</java.version>
+        <maven.version>17</maven.version>
         <project.build.sourceEncoding>UTF8</project.build.sourceEncoding>
     </properties>
 
@@ -62,19 +62,19 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.jupiter.version}</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.jupiter.version}</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-params</artifactId>
-            <version>${junit.jupiter.version}</version>
+            <version>${junit.version}</version>
         </dependency>
         <dependency>
             <groupId>org.junit.platform</groupId>
@@ -117,6 +117,12 @@
             <groupId>org.mockito</groupId>
             <artifactId>mockito-inline</artifactId>
             <version>${mockito.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>Lotto</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
