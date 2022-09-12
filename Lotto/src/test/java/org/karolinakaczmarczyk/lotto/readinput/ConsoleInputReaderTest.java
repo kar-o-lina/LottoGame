@@ -7,8 +7,7 @@ import java.util.Scanner;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.then;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.*;
 
 class ConsoleInputReaderTest {
 
@@ -18,18 +17,19 @@ class ConsoleInputReaderTest {
     @Test
     void shouldReturnSetOf6IntegersInRange() {
         //given
-        given(scanner.next()).willReturn("1", "2", "y", "3", "4", "105", "5", "6");
+        given(scanner.nextInt()).willReturn(100, 1, 2, 3, 4, 5, 6);
 
         //when
         var result = consoleInputReader.readInput();
 
         //then
         then(scanner)
-                .should(times(8))
-                .next();
+                .should(times(6))
+                .nextInt();
 
         then(scanner).shouldHaveNoMoreInteractions();
 
         assertThat(result).containsExactly(1, 2, 3, 4, 5, 6);
     }
 }
+

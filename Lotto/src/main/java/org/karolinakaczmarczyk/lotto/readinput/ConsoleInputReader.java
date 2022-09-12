@@ -7,7 +7,6 @@ import java.util.Set;
 import static org.karolinakaczmarczyk.lotto.configuration.LottoMessages.GAME_STARTING_MESSAGE;
 import static org.karolinakaczmarczyk.lotto.configuration.LottoMessages.INPUT_IS_OUT_OF_BOUNDS_MESSAGE;
 import static org.karolinakaczmarczyk.lotto.configuration.LottoMessages.INPUT_IS_NOT_NUMBER_MESSAGE;
-import static org.karolinakaczmarczyk.lotto.configuration.LottoMessages.print;
 import static org.karolinakaczmarczyk.lotto.configuration.LottoSettings.NUMBERS_FOR_LOTTO_GAME;
 
 public class ConsoleInputReader implements InputReader {
@@ -21,7 +20,7 @@ public class ConsoleInputReader implements InputReader {
     @Override
     public Set<Integer> readInput() {
         Set<Integer> userGuesses = new HashSet<>();
-        print(GAME_STARTING_MESSAGE);
+        System.out.println(GAME_STARTING_MESSAGE);
 
         while (userGuesses.size() < NUMBERS_FOR_LOTTO_GAME) {
             if (scanner.hasNextInt()) {
@@ -31,7 +30,7 @@ public class ConsoleInputReader implements InputReader {
                 }
             } else {
                 scanner.next();
-                print(INPUT_IS_NOT_NUMBER_MESSAGE);
+                System.out.println(INPUT_IS_NOT_NUMBER_MESSAGE);
             }
         }
         scanner.close();
@@ -40,7 +39,7 @@ public class ConsoleInputReader implements InputReader {
 
     private boolean validateUserInput(int userInput) {
         if (!isInBounds(userInput)) {
-            print(INPUT_IS_OUT_OF_BOUNDS_MESSAGE);
+            System.out.println(INPUT_IS_OUT_OF_BOUNDS_MESSAGE);
             return false;
         }
         return true;

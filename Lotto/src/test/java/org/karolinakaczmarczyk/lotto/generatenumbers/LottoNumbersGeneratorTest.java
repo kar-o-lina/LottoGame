@@ -1,10 +1,8 @@
 package org.karolinakaczmarczyk.lotto.generatenumbers;
 
 import org.junit.jupiter.api.Test;
-
 import java.util.Random;
 import java.util.Set;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.greaterThan;
