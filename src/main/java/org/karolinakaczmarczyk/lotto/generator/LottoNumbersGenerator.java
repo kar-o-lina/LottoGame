@@ -1,6 +1,6 @@
-package org.karolinakaczmarczyk.lotto.generatenumbers;
+package org.karolinakaczmarczyk.lotto.generator;
 
-import org.karolinakaczmarczyk.lotto.configuration.LottoGameSettings;
+import org.karolinakaczmarczyk.lotto.config.LottoGameSettings;
 
 import java.util.HashSet;
 import java.util.Random;

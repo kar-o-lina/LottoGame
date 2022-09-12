@@ -1,9 +1,10 @@
-package org.karolinakaczmarczyk.lotto.checkoutcome;
+package org.karolinakaczmarczyk.lotto.outcome;
 
 import java.util.Set;
-import static org.karolinakaczmarczyk.lotto.configuration.LottoMessages.USER_GUESSES_MESSAGE;
-import static org.karolinakaczmarczyk.lotto.configuration.LottoMessages.YOU_LOST_MESSAGE;
-import static org.karolinakaczmarczyk.lotto.configuration.LottoMessages.YOU_WON_MESSAGE;
+
+import static org.karolinakaczmarczyk.lotto.config.LottoMessages.USER_GUESSES_MESSAGE;
+import static org.karolinakaczmarczyk.lotto.config.LottoMessages.YOU_LOST_MESSAGE;
+import static org.karolinakaczmarczyk.lotto.config.LottoMessages.YOU_WON_MESSAGE;
 
 public class LottoOutcomeVerifier {
 

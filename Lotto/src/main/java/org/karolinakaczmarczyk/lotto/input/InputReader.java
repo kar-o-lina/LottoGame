@@ -1,4 +1,4 @@
-package org.karolinakaczmarczyk.lotto.readinput;
+package org.karolinakaczmarczyk.lotto.input;
 
 import java.util.Set;
 

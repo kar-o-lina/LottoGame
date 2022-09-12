@@ -1,8 +1,8 @@
 package org.karolinakaczmarczyk.lotto.application;
 
-import org.karolinakaczmarczyk.lotto.checkoutcome.LottoOutcomeVerifier;
-import org.karolinakaczmarczyk.lotto.generatenumbers.LottoNumbersGenerator;
-import org.karolinakaczmarczyk.lotto.readinput.ConsoleInputReader;
+import org.karolinakaczmarczyk.lotto.outcome.LottoOutcomeVerifier;
+import org.karolinakaczmarczyk.lotto.generator.LottoNumbersGenerator;
+import org.karolinakaczmarczyk.lotto.input.ConsoleInputReader;
 
 import java.util.Random;
 import java.util.Set;

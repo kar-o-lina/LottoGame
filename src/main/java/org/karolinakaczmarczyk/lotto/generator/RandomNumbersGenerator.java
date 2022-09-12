@@ -1,4 +1,4 @@
-package org.karolinakaczmarczyk.lotto.generatenumbers;
+package org.karolinakaczmarczyk.lotto.generator;
 
 import java.util.Set;
 

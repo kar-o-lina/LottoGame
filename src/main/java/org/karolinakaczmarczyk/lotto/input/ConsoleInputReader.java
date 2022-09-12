@@ -1,7 +1,7 @@
-package org.karolinakaczmarczyk.lotto.readinput;
+package org.karolinakaczmarczyk.lotto.input;
 
-import org.karolinakaczmarczyk.lotto.configuration.LottoGameSettings;
-import org.karolinakaczmarczyk.lotto.configuration.LottoMessages;
+import org.karolinakaczmarczyk.lotto.config.LottoGameSettings;
+import org.karolinakaczmarczyk.lotto.config.LottoMessages;
 
 import java.util.HashSet;
 import java.util.Scanner;

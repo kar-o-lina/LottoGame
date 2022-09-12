@@ -1,4 +1,4 @@
-package org.karolinakaczmarczyk.lotto.configuration;
+package org.karolinakaczmarczyk.lotto.config;
 
 public final class LottoMessages {
 

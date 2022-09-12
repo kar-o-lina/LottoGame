@@ -1,4 +1,4 @@
-package org.karolinakaczmarczyk.lotto.generatenumbers;
+package org.karolinakaczmarczyk.lotto.generator;
 
 import java.util.HashSet;
 import java.util.Random;
@@ -15,17 +15,18 @@ public class LottoNumbersGenerator implements RandomNumbersGenerator {
     @Override
     public Set<Integer> generateRandomNumbers(int numbersToGenerate, int lowerBoundInclusive, int upperBoundInclusive) {
 
-        final Set<Integer> generatedNumbers = new HashSet<>();
-
         if ((numbersToGenerate > 0) && (lowerBoundInclusive < upperBoundInclusive)) {
+            final Set<Integer> generatedNumbers = new HashSet<>();
+
             while (generatedNumbers.size() < numbersToGenerate) {
                 generatedNumbers.add(getRandomNumber(lowerBoundInclusive, upperBoundInclusive));
             }
             printGeneratedNumbers(generatedNumbers);
+            return generatedNumbers;
         } else {
             System.out.println("Wrong game settings");
         }
-        return generatedNumbers;
+        return null;
     }
 
     private int getRandomNumber(int lowerBoundInclusive, int upperBoundInclusive) {

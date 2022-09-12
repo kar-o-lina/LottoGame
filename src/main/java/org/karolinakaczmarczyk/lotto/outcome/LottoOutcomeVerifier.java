@@ -1,6 +1,6 @@
-package org.karolinakaczmarczyk.lotto.checkoutcome;
+package org.karolinakaczmarczyk.lotto.outcome;
 
-import org.karolinakaczmarczyk.lotto.configuration.LottoMessages;
+import org.karolinakaczmarczyk.lotto.config.LottoMessages;
 
 import java.util.Set;
 

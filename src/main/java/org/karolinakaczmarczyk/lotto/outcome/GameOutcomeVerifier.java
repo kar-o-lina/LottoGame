@@ -1,4 +1,4 @@
-package org.karolinakaczmarczyk.lotto.checkoutcome;
+package org.karolinakaczmarczyk.lotto.outcome;
 
 import java.util.Set;
 
